@@ -111,6 +111,14 @@ Published Year: 1603
 - `cin >> title` reads only **one word**. A title such as "The Great Gatsby" would be split across inputs. Use `getline(cin, title)` for multi-word input.
 - `#include <string>` is not included explicitly (it usually works because `<iostream>` pulls it in, but it is best practice to add it).
 
+##Screenshots
+###Code
+<img width="1552" height="982" alt="Q1-1" src="https://github.com/user-attachments/assets/76b91d7f-8821-4c32-bbb8-ed4bc8953000" />
+<img width="1552" height="982" alt="Q1-2" src="https://github.com/user-attachments/assets/1b32491d-e276-4dd6-8117-37dd483f0b95" />
+
+###Output
+<img width="1552" height="982" alt="Q1-Output" src="https://github.com/user-attachments/assets/1886546c-eace-45c0-8464-b8056ff0b1a2" />
+
 ---
 
 ## Q2 – Person Details (Encapsulation and Constructors)
@@ -177,6 +185,14 @@ Address: Surat
 - `cin >> address` reads only one word. Use `getline` for full addresses (remember to clear the newline with `cin.ignore()` first).
 - There is no default constructor, so `Person p;` will not compile.
 
+##Screenshots
+###Code
+<img width="1552" height="982" alt="Q2-1" src="https://github.com/user-attachments/assets/6de672ff-96ac-4e49-9810-2ccc38e671ca" />
+<img width="1552" height="982" alt="Q2-2" src="https://github.com/user-attachments/assets/e2af581c-531f-43bd-8ec1-d005482eeb04" />
+
+###Output
+<img width="1552" height="982" alt="Q2-Output" src="https://github.com/user-attachments/assets/7fba18cc-8998-4a1d-b0c9-184a23075996" />
+
 ---
 
 ## Q3 – Animal Hierarchy (Inheritance and Polymorphism)
@@ -229,6 +245,14 @@ Sound: Meow Meow
 - `Animal` has no **virtual destructor**. This is harmless here (objects are on the stack), but if you delete a derived object through an `Animal*`, you get undefined behavior. Add `virtual ~Animal() {}`.
 - `name` and `sound` are private, so derived classes must use the getters, which the code correctly does.
 
+##Screenshots
+###Code
+<img width="1552" height="982" alt="Q3-1" src="https://github.com/user-attachments/assets/95f36c55-5dcb-4a60-a703-a4c72e637c21" />
+<img width="1552" height="982" alt="Q3-2" src="https://github.com/user-attachments/assets/44fb399e-84ba-4d0f-a943-2ddbd34a5329" />
+##Output
+<img width="1552" height="982" alt="Q3-Output" src="https://github.com/user-attachments/assets/73de3325-c98f-4206-b80f-8ab6acbb73f5" />
+
+
 ---
 
 ## Q4 – Animal Hierarchy (with `<string>` header)
@@ -257,6 +281,14 @@ Cat: Kitty
 Sound: Meow Meow
 
 ```
+
+##Screenshots
+###Code
+<img width="1552" height="982" alt="Q4-1" src="https://github.com/user-attachments/assets/91460f1f-fc86-4918-8511-be797dbc491b" />
+<img width="1552" height="982" alt="Q4-2" src="https://github.com/user-attachments/assets/29cd29fc-4ecd-4c93-8c99-7b0fb778e574" />
+
+###Output
+<img width="1552" height="982" alt="Q4-Output" src="https://github.com/user-attachments/assets/0cbc1162-7d72-40de-b47c-4902eae2a6ca" />
 
 ---
 
@@ -309,6 +341,14 @@ Drawing Rectangle
 - `area()` **prints** the result instead of **returning** it. A more reusable design is `virtual float area() = 0;` and printing in `main()`.
 - Pi is hard-coded as `3.14`. Use `M_PI` from `<cmath>` or define a `const double PI = 3.14159265;`.
 - Add a `virtual ~Shape() {}` destructor for safe cleanup through base pointers.
+
+##Screenshots
+###Code
+<img width="1552" height="982" alt="Q5-1" src="https://github.com/user-attachments/assets/905cc088-519b-4bb5-a0f8-36d4cf13da13" />
+<img width="1552" height="982" alt="Q5-2" src="https://github.com/user-attachments/assets/692df879-448a-42ab-b722-4f2470275aca" />
+
+###Output
+<img width="1552" height="982" alt="Q5-Output" src="https://github.com/user-attachments/assets/856ed3e1-f777-4246-8717-200286013de1" />
 
 ---
 
